@@ -59,7 +59,7 @@ fi
 
 # for i in ${testlist[@]}; do
 # 	#echo "$i"
-# 	python3 runcache.py --cachetype fac --num_sets 0 --num_ways 16 --testfile tests/t${i}${t} > tests/test_fac/t${i}${text}
+# 	python3 runcache.py --cachetype fac --num_sets 1 --num_ways 16 --testfile tests/t${i}${t} > tests/test_fac/t${i}${text}
 # 	if [[ $(diff tests/results_fac/t${i}${text} tests/test_fac/t${i}${text}) ]]; then
 # 		echo "fac: error in test $i"
 # 	fi
