@@ -15,7 +15,7 @@ class Memory(dict):
         self.MAIN_MEMORY_BLOCK_SIZE_LN   = 5
         self.MAIN_MEMORY_INIT_FILE       = "./mm_init.data"
         self.MAIN_MEMORY_WORD_SIZE       = 4 # bytes (in accordance with RISC-V)
-        self.MAIN_MEMORY_WORDS_PER_BLOCK = self.MAIN_MEMORY_BLOCK_SIZE / self.MAIN_MEMORY_WORD_SIZE
+        self.MAIN_MEMORY_WORDS_PER_BLOCK = self.MAIN_MEMORY_BLOCK_SIZE // self.MAIN_MEMORY_WORD_SIZE
 
         self.write_queries  = 0
         self.read_queries   = 0
